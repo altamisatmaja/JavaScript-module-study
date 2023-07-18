@@ -1,0 +1,91 @@
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar DOM</title>
+</head>
+<body>
+    <h1>
+        JavaScript HTML DOM
+    </h1>
+    <p id="intro">Finding HTML by ID</p>
+    <p>This example domenstrates the <b>getElementById</b> method.</p>
+    <p id="demo"></p>
+
+    <script>
+        const element = document.getElementById('intro');
+
+        document.getElementById('demo').innerHTML = `The next from the intro paragraph is: ${element.innerHTML}`;
+    </script>
+</body>
+</html> -->
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        JavaScript HTML DOM
+    </h1>
+    <p class="intro">Halo ucok</p>
+    <p class="intro">This example domenstrates the <b>getElementById</b> method.</p>
+    <p id="demo"></p>
+
+    <script>
+        const element = document.getElementsByClassName('intro');
+
+        document.getElementById('demo').innerHTML = `The first paragraph (index 0) with class='intro' is: ${element[0].innerHTML}`;
+    </script>
+</body>
+</html> -->
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        JavaScript HTML DOM
+    </h1>
+    <p>Halo ucok</p>
+    <p>This example domenstrates the <b>getElementById</b> method.</p>
+    <p id="demo"></p>
+
+    <script>
+        const element = document.getElementsByTagName('p');
+
+        document.getElementById('demo').innerHTML = `The first paragraph (index 0) with class='intro' is: ${element[0].innerHTML}`;
+    </script>
+</body>
+</html> -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        JavaScript HTML DOM
+    </h1>
+    <p class="intro" style="color:blue">Halo ucok</p>
+    <p class="intro">This example domenstrates the <b>getElementById</b> method.</p>
+    <p id="demo"></p>
+
+    <script>
+        const intro_deck = document.querySelectorAll('p.intro');
+
+        document.getElementById('demo').innerHTML = `The first paragraph (index 0) with class='intro' is: ${intro_deck[0].innerHTML}`;
+    </script>
+</body>
+</html>

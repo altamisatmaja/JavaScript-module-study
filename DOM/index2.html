@@ -1,0 +1,104 @@
+<!-- <h1>DOM</h1>
+
+<p>yang sering dipake</p> -->
+<!-- document.createElement(element) untuk create an HTML element -->
+<!-- document.removeChild(element) untuk remove an HTML element -->
+<!-- document.appendChild(element) untuk add an HTML element -->
+<!-- document.replaceElement(new, old) untuk replace an HTML element -->
+<!-- document.write(text) untuk write into the HTML output stream -->
+
+<!-- pakai framework lebih gampang -->
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">The text above has been created dynamically.</div>
+
+    <script>
+        document.body.onload = addElement;
+        function addElement(){
+            var newDiv = document.createElement("div");
+            var newContent = document.createTextNode('Hellow World!');
+
+            newDiv.appendChild(newContent);
+            var currentDiv = document.getElementById("div1");
+            document.body.insertBefore(newDiv, currentDiv.nextSibling);
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .id {
+            background-color: yellow;
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul id="myList">
+        <li>Coffe</li>
+        <li>Tea</li>
+    </ul>
+        <p>Click the button to append an item to the end of the list.</p>
+        <button onclick="myFunction()">Coba deh</button>
+
+        <script>
+            function myFunction(){
+                let node = document.createElement('li');
+                let textnode = document.createTextNode('Water');
+                var x = document.getElementsByTagName('style')[0];
+
+                node.appendChild(textnode);
+                <!-- document.getElementById('myList').appendChild(node).style.backgroundColor="red"; -->
+                <!-- document.getElementById('myList').appendChild(node).innerHTML = x.innerHTML; -->
+            }
+        </script>
+    </ul>
+</body>
+</html> -->
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Java Script addEventListener()</h2>
+    <p>
+        This is example uses the addEventListener() method to execute
+        a function when a user clics on a button
+    </p>
+
+    <button id="myBtn">Klik donk deck!</button>
+
+    <script>
+        function myFunction(){
+            alert('Udah di klik ya deck?!')
+        }
+        
+        function okdeck() {
+            let bikin = document.createElement('p');
+            let bikinapa = document.createTextNode('Hayo udah di klik ya???');
+        }
+
+        document.getElementById('myBtn').addEventListener('click', myFunction);
+        document.getElementsByTagName('p').appendChild(bikin).addEventListener('click', okdeck);
+    </script>
+</body>
+</html>
